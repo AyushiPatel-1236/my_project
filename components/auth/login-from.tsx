@@ -1,5 +1,3 @@
- 
-import { CiSearch } from "react-icons/ci";
 import Link from 'next/link'
 
 import React from 'react'
@@ -12,26 +10,11 @@ import { IoAnalytics } from "react-icons/io5";
 
 import { GoBell } from "react-icons/go";
 
-export default function Home() {
+const LoginFrom = () => {
   return (
-    <div>
-
-  <div className="form">
-  <form className="w-[500px] relative ">
-  <div className=" relative">
-    <input type="search" placeholder="search product" className="w-full p-4  bg-gray-900"/>
-
-    <button  className="absolute right-1 top-1/2 -translate-y-1/2 p-4 bg-gray-900 ">
-    <CiSearch />
-     </button>
-</div>
-</form>
-
-  </div>
-
-  
-
-<aside className="side_bar1">
+    
+    <div >
+   <aside className="side_bar">
     <div className="side_top" >
     <p className="ic1"><FaCalendarDay /></p>
         <span className="acm">Acme</span>
@@ -39,9 +22,7 @@ export default function Home() {
        
        
     </div>
-  
-
-    <ul>
+   <ul>
         <li>
             <Link href="/" className='sidebar_link'>
             <span className="sidebar_icon">
@@ -100,18 +81,16 @@ export default function Home() {
     </ul>
    </aside>
 
-   <h1 className="inv">Inventory</h1>
-
-   <div className="product">
-   <h1 className="product1">You have no  products</h1>
-   <h3 className="product2">you can  start selling as soon as you add a product.</h3>
-   <button className="btn">Add Product</button>
-
-   </div>
 
 
-    </div>
 
-  
-  );
+</div>
+
+
+
+
+
+  )
 }
+
+export default LoginFrom
